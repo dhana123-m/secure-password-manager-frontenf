@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Secure Password Manager</h1>
+    <input id="masterInput" type="password" placeholder="Enter Master Password">
+    <button onclick="login()">Login</button>
+
+    <div id="dashboard" style="display:none;">
+      <input id="website" placeholder="Website">
+      <input id="username" placeholder="Username">
+      <input id="password" placeholder="Password">
+      <button onclick="addPassword()">Add</button>
+      <input id="search" placeholder="Search...">
+      <button onclick="searchPassword()">Search</button>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
